@@ -1,10 +1,9 @@
 import NecoIcon from '../pics/neco_icon.png';
-import { useContext } from 'react';
-import { useState } from 'react';
-import { userTodo } from './Todos';
+import { useState, useContext } from 'react';
+import { TodoContext } from './provider/TodoProvider';
 
 export const TodoInput = () => {
-  const { todos, setTodo } = useContext(userTodo);
+  const { todos, setTodo } = useContext(TodoContext);
   const [inputTask, setInputTask] = useState('');
   const handleInputTask = (evt) => {
     setInputTask(evt.target.value);

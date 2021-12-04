@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { userTodo } from './Todos';
+import { TodoContext } from './provider/TodoProvider';
 
 export const TodoItem = () => {
-  const { todos, setTodo } = useContext(userTodo);
+  const { todos, setTodo } = useContext(TodoContext);
   const handleCompleteTask = (completeTask) => {
     const completedTodos = [...todos].map((todo) => {
       if (todo.item === completeTask.item) {
