@@ -1,2 +1,2 @@
-# ToDoApp-with-react-CodeSandbox
+# SampleApp-with-react-CodeSandbox
 Created with CodeSandbox
