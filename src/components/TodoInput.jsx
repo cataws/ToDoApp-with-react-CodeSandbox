@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { useState } from 'react';
 import { userTodo } from './Todos';
 
-export default function TodoInput() {
+export const TodoInput = () => {
   const { todos, setTodo } = useContext(userTodo);
   const [inputTask, setInputTask] = useState('');
   const handleInputTask = (evt) => {
@@ -54,4 +54,4 @@ export default function TodoInput() {
       </form>
     </div>
   );
-}
+};

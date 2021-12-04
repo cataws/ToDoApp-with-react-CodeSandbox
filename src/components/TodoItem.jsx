@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { userTodo } from './Todos';
 
-export default function TodoItem() {
+export const TodoItem = () => {
   const { todos, setTodo } = useContext(userTodo);
   const handleCompleteTask = (completeTask) => {
     const completedTodos = [...todos].map((todo) => {
@@ -46,4 +46,4 @@ export default function TodoItem() {
       ))}
     </ul>
   );
-}
+};

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import TodoInput from './TodoInput';
-import TodoItem from './TodoItem';
+import { TodoInput } from './TodoInput';
+import { TodoItem } from './TodoItem';
 
 export const userTodo = React.createContext();
 
-export default function Todos() {
+export const Todos = () => {
   const [todos, setTodo] = useState([
     //    { item: 'aaa', isCompleted: false },
     //    { item: 'bbb', isCompleted: false },
@@ -28,4 +28,4 @@ export default function Todos() {
       </userTodo.Provider>
     </div>
   );
-}
+};
